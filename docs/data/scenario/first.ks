@@ -1,46 +1,134 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="豚、百獣の王への道"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+[bg storage=siezen.jpg time=500]
 
-メロスは激怒した。[l][r]
+君はとある森の中で一匹の豚として生まれた。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+これはこの豚が百獣の王になるまでの物語[l][r]
 
-(中略)[l][r]
+さあ、この森を探検してみよう[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+[bg storage=donguri.jpg time=500]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+おや、おいしそうなどんぐりがたくさん落ちている[l][r]
+
+[link target=*tag_donnguritaberu] →食べる [endlink][r]
+[link target=*tag_donnguritabenai] →食べない [endlink][r]
 [s]
 
-*tag_sleep
+*tag_donnguritaberu
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+その後、森のどんぐりを片っ端から食べ続けた。[l][r]
 
-【 BAD END 】[l][cm]
-
-[jump target=*start]
-
-*tag_run
-
-[bg storage=run.jpg time=500]
+どんぐりの栄養をもとに大きく成長した！！[l][r]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+おや、目の前に人間が現れた。[l][r]
+
+さあ、どうする[l][r]
+
+[link target=*tag_syukka] →人間についていく [endlink][r]
+[link target=*tag_tousou] →全力で逃げる [endlink][r]
+[link target=*tag_tatakae] →戦う [endlink][r]
+[s]
+
+*tag_donnguritabenai
+
+[cm]
+
+まわりにはどんぐり以外食べられるものがなかった。[l][r]
+その結果どんどん豚は弱っていった。[l][r]
+
+～死亡～[l][cm]
 
 [jump target=*start]
+
+[s]
+
+*tag_syukka
+
+[cm]
+
+どこかに連れていかれるようだ[l][r]
+
+...[l][r]
+
+ここは豚の出荷場だ！[l][r]
+
+[bg storage=korokke.webp time=500]
+おいしいコロッケになってしまった...[l][r]
+
+～死亡～[l][cm]
+[jump target=*start]
+
+[s]
+
+*tag_tousou
+
+[cm]
+
+何とか逃げ切れた[l][r]
+
+[bg storage=yakusou.webp time=500]
+
+なにやら怪しそうな薬草を見つけた。[l][r]
+
+[link target=*tag_sinnka] →食べてみる [endlink][r]
+[link target=*tag_heiwa] →食べはしない [endlink][r]
+[s]
+
+*tag_tatakae
+
+[cm]
+
+人間にボコボコにされてしまった[l][r]
+まわりには助けてくれる豚もいなかった。[l][r]
+
+～死亡～[l][cm]
+[jump target=*start]
+
+[s]
+
+*tag_sinnka
+
+[cm]
+
+...[l][r]
+
+おや[l][r]
+
+なにやら豚の様子がおかしいぞ[l][r]
+
+[cm]
+[bg storage=raion.png time=500]
+豚がライオンに進化した！！[l][r]
+
+ライオンとして百獣の王になった！[l][r]
+
+～成功～[l][cm]
+[jump target=*start]
+[s]
+
+*tag_heiwa
+
+薬草を食べず、何も起こらない平凡な日常を過ごし平和な生活を送った。[l][r]
+
+～失敗～[l][cm]
+[jump target=*start]
+
+
+
+
+
+
+
+
